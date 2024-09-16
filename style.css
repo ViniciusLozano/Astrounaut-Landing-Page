@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+
+  --white: #ffffff;
+  --light-gray: #f9f4fb;
+  --accent-color: #b52184;
+  --text-base-color: #312d64;
+  --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+body{
+  background-color: #F9F4FB;
+  font-family: "Mulish", sans-serif;
+}
+
+.pageone{
+  margin: 0 auto;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 10rem;
+}
+
+#seta{
+  margin-top: 17rem;
+  width: 5.9rem;
+  height: 10rem;
+}
+
+.astronauta img{
+  width: 70rem;
+  height: 70rem;
+}
+
+.pageone h1{
+  font-weight: 900;
+  padding-top: 28rem;
+  font-size: 3.8rem;
+  color: #B52184;
+}
+
+.pageone h3{
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: #312D64;
+  margin-bottom: 6rem;
+}
+
+/*planets*/
+
+.planets{
+  background: var(--gradient-background);
+  padding: 6.4rem 10rem 6.4rem 10rem;
+}
+
+section{
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.planet{
+  width: 30%;
+}
+
+.content{
+  min-height: 100%;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 3.2rem;
+}
+
+.content img{
+  padding-bottom: 4rem;
+}
+
+.content h1{
+  font-size: 2.8rem;
+  color: #B52184;
+  font-weight: 900;
+
+  padding-bottom: 2.4rem;
+}
+
+.content p{
+  font-size: 1.4rem;
+  color: #312D64;
+  font-weight: 600;
+  padding-bottom: 3.4rem;
+}
+
+/*formulario*/
+
+form h1{
+  font-weight: 900;
+  font-size: 3.8rem;
+  color: #B52184;
+  margin-bottom: 3rem;
+}
+
+fieldset{
+  border: none;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  padding: 0;
+  margin: 0 auto;
+  background: url(./images/stars.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+}
+
+#contact form {
+  flex: 1;
+  margin-left: 10.9rem;
+}
+
+#contact .stars {
+  flex: 1;
+}
+
+#contact form h2 {
+  margin-bottom: 4.3rem;
+}
+
+#contact form .input-wrapper {
+  margin-bottom: 2.4rem;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  border: 0.15rem solid var(--text-base-color);
+  border-radius: 1.6rem;
+  padding: 1.2rem 1.6rem 1.6rem;
+  color: var(--text-base-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+#contact form textarea {
+  height: 12.6rem;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: var(--text-base-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+#contact form input::placeholder {
+  padding-left: 2.8rem;
+}
+
+#contact form button {
+  background: var(--gradient-background);
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  padding: 1rem 1.6rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  transition: filter 200ms;
+}
+
+#contact form button:hover {
+  filter: brightness(0.9);
+}
+
+#name {
+  background: url(./assets/person.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#email {
+  background: url(./assets/arroba.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+footer{
+  background: var(--gradient-background);
+  bottom: 0 auto;
+}
+
+footer p{
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  
+  padding: 3rem 0;
+}
+
+@media (max-width: 1140px){
+  body{
+    width: 100%;
+  }
+
+  .astronauta{
+      position: absolute;
+      top: 0px;
+      z-index: -1;
+  }
+
+  .seta{
+    margin-top: 50rem;
+  }
+
+  #seta{
+  margin-top: 1rem;
+  width: 5.9rem;
+  height: 10rem;
+  width: 100%;
+  }
+
+  section{
+    display: block;
+  }
+
+  .planet{
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  #contact{
+    margin-left: 0;
+    display: block;
+    padding-right: 4rem;
+    margin-top: 5rem;
+    max-width: 90%;
+  }
+
+  .button{
+    margin-bottom: 5rem;
+  }
+
+  .stars{
+    display: none;
+  }
+}
